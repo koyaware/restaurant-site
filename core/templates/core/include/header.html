@@ -8,11 +8,11 @@
             <nav class='menu__body js-menu-body'>
                 <ul class='menu__list'>
                     <li><a class='menu__link' href='{% url 'home' %}'>Главная</a></li>
-                    <li><a class='menu__link' href='#'>Меню</a></li>
+                    <li><a class='menu__link' href='{% url 'main_menu' %}'>Меню</a></li>
                     <li>
                         <a class='menu__link menu__link--more' href='#'>Ещё...</a>
                         <ul class="menu__sublist">
-                            <li><a class='menu__link' href="#">Фотоотчеты</a></li>
+                            <li><a class='menu__link' href="{% url 'photo_reports' %}">Фотоотчеты</a></li>
                             <li><a class='menu__link' href="{% url 'about' %}">Правила заведения</a></li>
                         </ul>
                     </li>

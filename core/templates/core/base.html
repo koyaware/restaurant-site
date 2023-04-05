@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {% block title %} {% endblock title %}
     <link rel="stylesheet" href="{% static 'core/' %}css/app.min.css" />
+      {% block extra_head %}
+      {% endblock extra_head %}
   </head>
 <body>
-    {% include 'core/include/header.html' %}
-{% block body %}
-{% endblock body %}
-    {% include 'core/include/footer.html' %}
+    <div class="site-wrapper">
+        {% include 'core/include/header.html' %}
+        {% block body %}
+        {% endblock body %}
+        {% include 'core/include/footer.html' %}
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>>
     <script src="{% static 'core/' %}js/app.min.js"></script>
+    {% block extra_scripts %} {% endblock extra_scripts %}
 </body>
 </html>

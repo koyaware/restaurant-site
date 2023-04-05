@@ -24,3 +24,36 @@ def about(request: WSGIRequest) -> HttpResponse:
             'title': 'О нас'
         }
     )
+
+
+@require_http_methods(['GET'])
+def photo_reports(request: WSGIRequest) -> HttpResponse:
+    return render(
+        request,
+        'core/pages/photo_reports.html',
+        context={
+            'title': 'Фото-отчёты'
+        }
+    )
+
+
+@require_http_methods(['GET'])
+def photo_reports_detail(request: WSGIRequest) -> HttpResponse:
+    return render(
+        request,
+        'core/pages/photo_reports_detail.html',
+        context={
+            'title': 'Фото-отчёты'
+        }
+    )
+
+
+@require_http_methods(['GET'])
+def main_menu(request: WSGIRequest) -> HttpResponse:
+    return render(
+        request,
+        'core/pages/main_menu.html',
+        context={
+            'title': 'Главное меню'
+        }
+    )

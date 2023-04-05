@@ -1,0 +1,77 @@
+<div class="menu-items__item menu-items__item--full"> {% load static %}
+    <div class="menu-items__sticker meal-sticker meal-sticker--chief">
+        <div class="meal-sticker__img">
+            <picture>
+                <source srcset="{% static 'core/' %}img/hero_decor2.webp" type="image/webp">
+                <img src="{% static 'core/' %}img/hero_decor2.png" alt=""></picture>
+        </div>
+        <div class="meal-sticker__text">Выбор шефа</div>
+    </div>
+    <a href="#" class="menu-items__video-link video-link">
+        <span class="video-link__circle"></span>
+        <span class="video-link__text">
+                        <span>ВИДЕО</span>
+                        КАК ЕСТЬ
+                        <span>БЛЮДО?</span>
+                        </span>
+    </a>
+    <article class="menu-meal">
+        <div class="menu-meal__left">
+            <div class="menu-meal__top">
+                <div class="menu-meal__slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="menu-meal__img _ibg">
+                                <picture>
+                                    <source srcset="{% static 'core/' %}img/meals/2.webp" type="image/webp">
+                                    <img src="{% static 'core/' %}img/meals/2.jpg" alt="first meal"></picture>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="menu-meal__img _ibg">
+                                <picture>
+                                    <source srcset="{% static 'core/' %}img/meals/1.webp" type="image/webp">
+                                    <img src="{% static 'core/' %}img/meals/1.jpg" alt="first meal"></picture>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="menu-meal__img _ibg">
+                                <picture>
+                                    <source srcset="{% static 'core/' %}img/meals/3.webp" type="image/webp">
+                                    <img src="{% static 'core/' %}img/meals/3.jpg" alt="first meal"></picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu-meal__pagination swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-meal__right">
+            <button class="menu-meal__close btn" type="button"></button>
+            <div class="menu-meal__info meal-info">
+                <h4 class="meal-info__title">Салат с тигровыми креветками</h4>
+                <div class="meal-info__calories">
+                    <span>Ккал:245</span>
+                    <span>БЖУ: 19,8/12,5/0</span>
+                </div>
+                <div class="meal-info__text">
+                    <p>Идейные соображения высшего порядка, а также начало повседневной работы по
+                        формированию позиции обеспечивает широкому кругу (специалистов) участие в
+                        формировании систем массового участия. Идейные соображения высшего порядка,
+                        а также дальнейшее развитие различных форм деятельности представляет собой
+                        интересный эксперимент проверки форм развития.</p>
+                </div>
+                <div class="meal-info__bottom">
+                    <div class="meal-info__price"><span>359₽</span>/100г.</div>
+                    <button class="meal-info__btn btn">подробнее</button>
+                </div>
+                <div class="meal-info__tags meal-tags">
+                    <span class="meal-tags__tag meal-tags__tag--vegan">Вегетерианские блюда</span>
+                    <span class="meal-tags__tag">Выбор шефа</span>
+                    <span class="meal-tags__tag">Популярное</span>
+                    <span class="meal-tags__tag">Блюда до 400₽</span>
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
