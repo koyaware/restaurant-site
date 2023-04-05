@@ -1,0 +1,27 @@
+<div class="hero">{% load static %}
+    <div class="hero__container container">
+        <div class="hero__decors hero-decor">
+            <picture>
+                <source srcset="{% static 'core/' %}img/hero_decor.webp" type="image/webp">
+                <img class="hero-decor__img hero-decor__img--first"
+                     src="{% static 'core/' %}img/hero_decor.png" alt="decor-1"/></picture>
+            <picture>
+                <source srcset="{% static 'core/' %}img/hero_decor2.webp" type="image/webp">
+                <img class="hero-decor__img hero-decor__img--last"
+                     src="{% static 'core/' %}img/hero_decor2.png" alt="decor-2"/></picture>
+        </div>
+        <div class="hero__btns">
+            <button class="hero__btn btn" type="button">
+                Забронировать столик
+            </button>
+            <button class="hero__btn btn btn--white" type="button">
+                Посмотреть меню
+            </button>
+        </div>
+        <div class="hero__bg _ibg">
+            <picture>
+                <source srcset="{% static 'core/' %}img/hero.webp" type="image/webp">
+                <img src="{% static 'core/' %}img/hero.jpg" alt=""/></picture>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+<footer class="footer">{% load static %}
+    <div class="footer__wrapper">
+        <div class='footer__container container'>
+            <div class="footer__top">
+                <a href="{% url 'home' %}" class="footer-logo">
+                    <picture>
+                        <source srcset="{% static 'core/' %}img/logo.webp" type="image/webp">
+                        <img src="{% static 'core/' %}img/logo.png" alt="logo"></picture>
+                </a>
+                <div class="footer-nav">
+                    <a href="{% url 'home' %}" class="footer-nav__link">Главная</a>
+                    <a href="#" class="footer-nav__link">Акции</a>
+                    <a href="#" class="footer-nav__link">Команда</a>
+                    <a href="#" class="footer-nav__link">Меню</a>
+                    <a href="#" class="footer-nav__link">Интерьер</a>
+                    <a href="#" class="footer-nav__link">Контакты</a>
+                </div>
+                <div class="footer-right">
+                    <a href="tel:88009999999" class="footer-right__link">8 (800) 999-99-99</a>
+                    <span class="footer-right__text">Бронь столов с 09:00 до 19:00</span>
+                    <div class="footer__right">
+                        <div class="contacts-socials contacts-socials--footer">
+                            <div class="contacts-socials__item">
+                                <a href="#" class="contacts-socials__link contacts-socials__link--instagram"></a>
+                            </div>
+                            <div class="contacts-socials__item">
+                                <a href="#" class="contacts-socials__link contacts-socials__link--tg"></a>
+                            </div>
+                            <div class="contacts-socials__item">
+                                <a href="#" class="contacts-socials__link contacts-socials__link--whatsapp"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom footer-bottom">
+                <div class="footer-bottom__left">
+                    <a href="#" class="footer-bottom__link">Политика конфидециальности</a>
+                    <a href="#" class="footer-bottom__link">Договор оферты</a>
+                </div>
+                <div class="footer-bottom__center">
+                    <span class="footer-bottom__text">Информация на сайте не является публичной офертой</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
