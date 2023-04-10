@@ -57,3 +57,14 @@ def main_menu(request: WSGIRequest) -> HttpResponse:
             'title': 'Главное меню'
         }
     )
+
+
+@require_http_methods(['GET'])
+def bar_menu(request: WSGIRequest) -> HttpResponse:
+    return render(
+        request,
+        'core/pages/bar_menu.html',
+        context={
+            'title': 'Барное меню'
+        }
+    )
