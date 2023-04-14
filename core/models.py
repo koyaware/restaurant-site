@@ -15,7 +15,7 @@ class Category(Model):
     )
 
     def __str__(self):
-        return f'{self.slug}'
+        return f'{self.name}'
 
     def __repr__(self):
         return f'Category: {self.pk}'
@@ -48,7 +48,7 @@ class Product(Model):
     )
 
     def __str__(self):
-        return self.slug
+        return self.name
 
     def __repr__(self):
         return f'Product: {self.pk}'
@@ -124,7 +124,7 @@ class Tags(Model):
     )
 
     def __str__(self):
-        return f'{self.slug}'
+        return f'{self.name}'
 
     def __repr__(self):
         return f'Tags: {self.pk}'
@@ -176,7 +176,7 @@ class Sales(Model):
     )
 
     def __str__(self):
-        return f'{self.active}'
+        return f'{self.name}'
 
     def __repr__(self):
         return f'Sales: {self.pk}'
